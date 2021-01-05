@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ros.rosjava_context_manager.MKMController">
+      <children>
+      <TitledPane animated="false" collapsible="false" text="FullStateDescription" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="960.0">
+               <children>
+                  <TableView fx:id="fsdTableView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="fsdPredicateColumn" prefWidth="75.0" text="Predicate" />
+                      <TableColumn fx:id="fsdVar1Column" editable="false" prefWidth="75.0" text="Var1" />
+                        <TableColumn fx:id="fsdVar2Column" prefWidth="75.0" text="Var2" />
+                        <TableColumn fx:id="fsdVar3Column" prefWidth="75.0" text="Var3" />
+                        <TableColumn fx:id="fsdVar4Column" prefWidth="75.0" text="Var4" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Label fx:id="fsdLastTimeLabel" alignment="TOP_RIGHT" text="Last Time :" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0" />
+   </children>
+</AnchorPane>

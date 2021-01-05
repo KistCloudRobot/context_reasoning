@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/ontologies/arbi.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+
+<owl:NamedIndividual rdf:about="&arbi;turtlebot01">
+    <rdf:type rdf:resource="&knowrob;Robot"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;A1">
+    <rdf:type rdf:resource="&knowrob;Person"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;A2">
+    <rdf:type rdf:resource="&knowrob;Person"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;A3">
+    <rdf:type rdf:resource="&knowrob;Person"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;B1">
+    <rdf:type rdf:resource="&knowrob;Person"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;B2">
+    <rdf:type rdf:resource="&knowrob;Person"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;B3">
+    <rdf:type rdf:resource="&knowrob;Person"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;cup3">
+    <rdf:type rdf:resource="&knowrob;Cup"/>
+    <knowrob:heightOfObject rdf:datatype="&xsd;double">0.1</knowrob:heightOfObject>
+    <knowrob:depthOfObject rdf:datatype="&xsd;double">0.1</knowrob:depthOfObject>
+    <knowrob:widthOfObject rdf:datatype="&xsd;double">0.1</knowrob:widthOfObject>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;VisualPerception_cup3">
+    <rdf:type rdf:resource="&knowrob;VisualPerception"/>
+    <knowrob:startTime rdf:resource="&arbi;timepoint_1377777000"/>
+    <knowrob:objectActedOn rdf:resource="&arbi;cup3"/>
+    <knowrob:eventOccursAt rdf:resource="&arbi;RotMat3D_cup3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;RotMat3D_cup3">
+    <rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+
+    <knowrob:m00 rdf:datatype="&xsd;double">1.0</knowrob:m00>
+    <knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+    <knowrob:m02 rdf:datatype="&xsd;double">0.0</knowrob:m02>
+    <knowrob:m03 rdf:datatype="&xsd;double">5.5</knowrob:m03>
+
+    <knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+    <knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+    <knowrob:m12 rdf:datatype="&xsd;double">0.0</knowrob:m12>
+    <knowrob:m13 rdf:datatype="&xsd;double">-4.5</knowrob:m13>
+
+    <knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+    <knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+    <knowrob:m22 rdf:datatype="&xsd;double">1.0</knowrob:m22>
+    <knowrob:m23 rdf:datatype="&xsd;double">0.5</knowrob:m23>
+
+    <knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+    <knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+    <knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+    <knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+</owl:NamedIndividual>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<owl:NamedIndividual rdf:about="&arbi;B3">
+    <rdf:type rdf:resource="&knowrob;Person"/>
+</owl:NamedIndividual>
+
+
+
+<owl:NamedIndividual rdf:about="&arbi;VisualPerception4">
+    <rdf:type rdf:resource="&knowrob;VisualPerception"/>
+    <knowrob:startTime rdf:resource="&arbi;timepoint_1377777000"/>
+    <knowrob:objectActedOn rdf:resource="&arbi;B3"/>
+    <knowrob:eventOccursAt rdf:resource="&arbi;RotMat3D_1"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="&arbi;RotMat3D_1">
+    <rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+    <knowrob:m00 rdf:datatype="&xsd;double">1.0</knowrob:m00>
+    <knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+    <knowrob:m02 rdf:datatype="&xsd;double">0.0</knowrob:m02>
+    <knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+    <knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+    <knowrob:m12 rdf:datatype="&xsd;double">0.0</knowrob:m12>
+    <knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+    <knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+    <knowrob:m22 rdf:datatype="&xsd;double">1.0</knowrob:m22>
+    <knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+    <knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+    <knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+    <knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+    <knowrob:m03 rdf:datatype="&xsd;double">0.319</knowrob:m03>
+    <knowrob:m13 rdf:datatype="&xsd;double">-0.889</knowrob:m13>
+    <knowrob:m23 rdf:datatype="&xsd;double">0.3</knowrob:m23>
+</owl:NamedIndividual>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+<owl:NamedIndividual rdf:about="&arbi;officeRoom001">
+    <rdf:type rdf:resource="&knowrob;RoomInAConstruction"/>
+    <knowrob:depthOfObject rdf:datatype="&xsd;double">3.26</knowrob:depthOfObject>
+    <knowrob:widthOfObject rdf:datatype="&xsd;double">4.09</knowrob:widthOfObject>
+    <knowrob:heightOfObject rdf:datatype="&xsd;double">3.00</knowrob:heightOfObject>
+    <arbi:frontAreaOfRoom rdf:resource="&arbi;frontArea_officeRoom001"/>
+    <knowrob:center rdf:resource="&arbi;Point3D_01"/>
+</owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="&arbi;frontArea_officeRoom001">
+    <rdf:type rdf:resource="&knowrob;Place"/>
+    <knowrob:depthOfObject rdf:datatype="&xsd;double">1.11</knowrob:depthOfObject>
+    <knowrob:widthOfObject rdf:datatype="&xsd;double">1.11</knowrob:widthOfObject>
+    <knowrob:heightOfObject rdf:datatype="&xsd;double">3.0</knowrob:heightOfObject>
+    <knowrob:center rdf:resource="&arbi;Point3D_02"/>
+</owl:NamedIndividual>
+
+
+<!-- officeRoom001 center position -->
+<owl:NamedIndividual rdf:about="&arbi;Point3D_01">
+    <rdf:type rdf:resource="&knowrob;Point3D"/>
+    <knowrob:xCoord rdf:datatype="&xsd;double">0.48</knowrob:xCoord>
+    <knowrob:yCoord rdf:datatype="&xsd;double">4.085</knowrob:yCoord>
+    <knowrob:zCoord rdf:datatype="&xsd;double">0.0</knowrob:zCoord>
+</owl:NamedIndividual>
+
+<!-- officeRoom001 front Area center position -->
+<owl:NamedIndividual rdf:about="&arbi;Point3D_02">
+    <rdf:type rdf:resource="&knowrob;Point3D"/>
+    <knowrob:xCoord rdf:datatype="&xsd;double">-1.89</knowrob:xCoord>
+    <knowrob:yCoord rdf:datatype="&xsd;double">2.51</knowrob:yCoord>
+    <knowrob:zCoord rdf:datatype="&xsd;double">0.0</knowrob:zCoord>
+</owl:NamedIndividual>
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+<owl:NamedIndividual rdf:about="&arbi;officeRoom002">
+    <rdf:type rdf:resource="&knowrob;RoomInAConstruction"/>
+    <knowrob:depthOfObject rdf:datatype="&xsd;double">3.48</knowrob:depthOfObject>
+    <knowrob:widthOfObject rdf:datatype="&xsd;double">3.73</knowrob:widthOfObject>
+    <knowrob:heightOfObject rdf:datatype="&xsd;double">3.00</knowrob:heightOfObject>
+    <arbi:frontAreaOfRoom rdf:resource="&arbi;frontArea_officeRoom002"/>
+    <knowrob:center rdf:resource="&arbi;Point3D_03"/>
+</owl:NamedIndividual>
+
+
+<owl:NamedIndividual rdf:about="&arbi;frontArea_officeRoom002">
+    <rdf:type rdf:resource="&knowrob;Place"/>
+    <knowrob:depthOfObject rdf:datatype="&xsd;double">1.08</knowrob:depthOfObject>
+    <knowrob:widthOfObject rdf:datatype="&xsd;double">1.71</knowrob:widthOfObject>
+    <knowrob:heightOfObject rdf:datatype="&xsd;double">0.0</knowrob:heightOfObject>
+    <knowrob:center rdf:resource="&arbi;Point3D_04"/>
+</owl:NamedIndividual>
+
+
+<!-- officeRoom002 center position -->
+<owl:NamedIndividual rdf:about="&arbi;Point3D_03">
+    <rdf:type rdf:resource="&knowrob;Point3D"/>
+    <knowrob:xCoord rdf:datatype="&xsd;double">0.356</knowrob:xCoord>
+    <knowrob:yCoord rdf:datatype="&xsd;double">0.0</knowrob:yCoord>
+    <knowrob:zCoord rdf:datatype="&xsd;double">0.0</knowrob:zCoord>
+</owl:NamedIndividual>
+
+<!-- officeRoom002 front Area center position -->
+<owl:NamedIndividual rdf:about="&arbi;Point3D_04">
+    <rdf:type rdf:resource="&knowrob;Point3D"/>
+    <knowrob:xCoord rdf:datatype="&xsd;double">-1.77</knowrob:xCoord>
+    <knowrob:yCoord rdf:datatype="&xsd;double">-0.05</knowrob:yCoord>
+    <knowrob:zCoord rdf:datatype="&xsd;double">0.0</knowrob:zCoord>
+</owl:NamedIndividual>
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+    <!-- http://www.arbi.com/ontologies/arbi-map.owl#Cabinet_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi-map.owl#Cabinet_001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Cabinet-PieceOfFurniture"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+
+
+
+   <!-- http://www.arbi.com/ontologies/arbi-map.owl#SemanticMapPerception_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi-map.owl#SemanticMapPerception_001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_0"/>
+        <knowrob:eventOccursAt rdf:resource="http://www.arbi.com/ontologies/arbi-map.owl#RotationMatrix3D_001"/>
+        <knowrob:objectActedOn rdf:resource="http://www.arbi.com/ontologies/arbi-map.owl#Cabinet_001"/>
+    </owl:NamedIndividual>
+
+
+   <!-- http://www.arbi.com/ontologies/arbi-map.owl#RotationMatrix3D_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi-map.owl#RotationMatrix3D_001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#RotationMatrix3D"/>
+        <knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m00>
+        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m01>
+        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
+        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m10>
+        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m11>
+        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
+        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
+        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
+        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
+        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
+        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
+        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
+        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.319</knowrob:m03>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.889</knowrob:m13>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</knowrob:m23>
+    </owl:NamedIndividual>
+
+
+
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+    <!-- http://www.arbi.com/ontologies/arbi-map.owl#Document_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi-map.owl#Document_001">
+        <rdf:type rdf:resource="&arbi;Document"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.15</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+
+
+    <!-- http://www.arbi.com/ontologies/arbi-map.owl#SemanticMapPerception_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi-map.owl#SemanticMapPerception_002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
+        <knowrob:startTime rdf:resource="http://knowrob.org/kb/ias_semantic_map.owl#timepoint_0"/>
+        <knowrob:eventOccursAt rdf:resource="http://www.arbi.com/ontologies/arbi-map.owl#RotationMatrix3D_002"/>
+        <knowrob:objectActedOn rdf:resource="http://www.arbi.com/ontologies/arbi-map.owl#Document_001"/>
+    </owl:NamedIndividual>
+
+
+
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi-map.owl#RotationMatrix3D_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi-map.owl#RotationMatrix3D_002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m00>
+        <knowrob:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m01>
+        <knowrob:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m02>
+        <knowrob:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m10>
+        <knowrob:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m11>
+        <knowrob:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m12>
+        <knowrob:m20 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m20>
+        <knowrob:m21 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m21>
+        <knowrob:m22 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m22>
+        <knowrob:m30 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m30>
+        <knowrob:m31 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m31>
+        <knowrob:m32 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:m32>
+        <knowrob:m33 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:m33>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.325</knowrob:m03>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.92</knowrob:m13>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</knowrob:m23>
+    </owl:NamedIndividual>
+    
+
+
+	
+
+
+
+    
+
+
+
+
+
+
+
+</rdf:RDF>

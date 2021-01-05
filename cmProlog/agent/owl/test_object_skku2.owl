@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/ontologies/arbi_knowrob.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+	<!-- object정의 -->
+	<owl:NamedIndividual rdf:about="&arbi;milk">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Bottle"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.23544</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.075206</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.074768</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;juice">
+		<rdf:type rdf:resource="&knowrob;Obstacle"/>
+<!--
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.23814</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.082402</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.079344</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;table">
+		<rdf:type rdf:resource="&knowrob;DisplayShelf"/>
+<!--
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">6.9000e-01</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">7.0887e-01</knowrob:widthOfObject>
+-->
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_table"/>
+	</owl:NamedIndividual>
+	
+
+
+
+<!-- kist dataset-->
+
+	<owl:NamedIndividual rdf:about="&arbi;red_gotica">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Bottle"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;bakey">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- SnackBox"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;pringles_onion">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- ChipsCan"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;diget_box">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- SnackBox"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;diget">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Snack"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;gotica">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Bottle"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;vitamin_water">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Bottle"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;diget_small_box">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- SnackBox"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3544e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+
+
+
+
+<!-- skku dataset-->
+
+	<owl:NamedIndividual rdf:about="&arbi;chocolate_syrup">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Bottle"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;orange_cup">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Cup"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;orange_juice">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Obstacle"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3814e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.5e-2</knowrob:widthOfObject>
+-->
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;mug_red">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- DrinkingMug"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;mug_white">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- DrinkingMug"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;corn_flight">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- CerealBox"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;telephone">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Telephone"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;calculator">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Calculator"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;black_bowl">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Bowl-Eating"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;handcream">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Lotion"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;small_milk">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Bottle"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;red_cup">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Cup"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;elephant_mug">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- DrinkingMug"/>
+<!-		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;kettle">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- Kettle"/>
+<!		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;eiffel_tower_mug">
+		<rdf:type rdf:resource="&knowrob;Artifact"/> <!-- DrinkingMug"/>
+<!		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.69000</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.1342</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.70887</knowrob:widthOfObject>
+-->
+
+	</owl:NamedIndividual>
+
+</rdf:RDF>

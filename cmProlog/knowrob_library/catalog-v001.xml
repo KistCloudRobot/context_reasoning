@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://data.qudt.org/qudt/owl/1.0.0/qudt.owl" uri="qudt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="duplicate:http://knowrob.org/kb/PR2.owl" uri="PR2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="duplicate:http://knowrob.org/kb/PR2.owl" uri="Turtle.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/comp_spatial.owl" uri="comp_spatial.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/comp_temporal.owl" uri="comp_temporal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/computable.owl" uri="computable.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/knowrob.owl" uri="knowrob.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/knowrob_objects.owl" uri="knowrob_objects.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/knowrob_owlapi_test.owl" uri="knowrob_owlapi_test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/knowrob_units.owl" uri="knowrob_units.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/srdl2-action.owl" uri="srdl2-action.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/srdl2-cap.owl" uri="srdl2-cap.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/srdl2-comp.owl" uri="srdl2-comp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/srdl2.owl" uri="srdl2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://knowrob.org/kb/test_comp_spatial.owl" uri="test_comp_spatial.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://qudt.org/1.1/vocab/dimension" uri="dimension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://qudt.org/1.1/vocab/dimensionalunit" uri="dimensionalunit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://qudt.org/1.1/vocab/quantity" uri="quantity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://qudt.org/vocab/unit" uri="unit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://www.arbi.com/ontologies/arbi.owl" uri="arbi101.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1549504271273" name="http://www.w3.org/2002/07/owl" uri="owl.owl"/>
+    </group>
+</catalog>

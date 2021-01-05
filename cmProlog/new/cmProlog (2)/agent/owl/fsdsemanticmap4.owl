@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/ontologies/arbi_knowrob.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+	<!-- Robot -->
+	<owl:NamedIndividual rdf:about="&knowrob;lHandPosePerception4>
+		<rdf:type rdf:resource="&knowrob;HandPosePerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981405"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;barrett_left_gripper"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_barrett_left_gripper"/>
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_barrettRobot">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">-90.03993</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">8.0</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">-0.44063863</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">10.0</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">-90.544304</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">15.0</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<!-- Object -->
+	<owl:NamedIndividual rdf:about="&arbi;box1">
+		<rdf:type rdf:resource="&knowrob;Box"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.0857</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.2173</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.3019</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;bottle1">
+		<rdf:type rdf:resource="&knowrob;Bottle"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.08</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.08</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.25</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;basket1">
+		<rdf:type rdf:resource="&knowrob;Basket"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.2564</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.2263</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.3159</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;table1">
+		<rdf:type rdf:resource="&knowrob;Table"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.8</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.098</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- Object Position-->
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_box1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+
+		<knowrob:m00 rdf:datatype="&xsd;double">1.0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">0.014417057</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">15.0</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">6.0358254e-4</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">3.0</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">-139.99998</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">12.0</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_bottle1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+
+		<knowrob:m00 rdf:datatype="&xsd;double">1.0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">23.12573</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">8.0</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">0.38836497</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">10.0</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">-78.35222</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">15.0</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_basket1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+
+		<knowrob:m00 rdf:datatype="&xsd;double">1.0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">-89.99961</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">18.0</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">0.0</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">3.0</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">-89.97443</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">12.0</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_table1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+
+		<knowrob:m00 rdf:datatype="&xsd;double">1.0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">-0.0</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">10</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">0.0</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">5.0</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">-0.0</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">5.0</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+	</owl:NamedIndividual>
+
+
+	<!-- Visual Object Perception-->
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception1">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981404"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535981500"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;box1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_box1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception2">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981404"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535981500"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;bottle1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_bottle1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception3">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981404"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535981500"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;basket1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_basket1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception4">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981404"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535981500"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;table1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_table1"/>
+	</owl:NamedIndividual>
+	
+	<!-- Joint Perception-->
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception1_1">
+		<rdf:type rdf:resource="&knowrob;JointPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_2678080"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfinger1Joint1"/>
+		<knowrob:Radius rdf:datatype="&xsd;double">-0.0204</knowrob:Radius>
+		<knowrob:Velocity rdf:datatype="&xsd;double">5.2452</knowrob:Velocity>
+		<knowrob:Effort rdf:datatype="&xsd;double">-18.4455</knowrob:Effort>
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception1_2">
+		<rdf:type rdf:resource="&knowrob;JointPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_2678080"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfinger1Joint2"/>
+		<knowrob:Radius rdf:datatype="&xsd;double">44.9963</knowrob:Radius>
+		<knowrob:Velocity rdf:datatype="&xsd;double">9.5367</knowrob:Velocity>
+		<knowrob:Effort rdf:datatype="&xsd;double">-6.5863</knowrob:Effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception2_1">
+		<rdf:type rdf:resource="&knowrob;JointPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_2678080"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfinger2Joint1"/>
+		<knowrob:Radius rdf:datatype="&xsd;double">-0.0155</knowrob:Radius>
+		<knowrob:Velocity rdf:datatype="&xsd;double">5.2928</knowrob:Velocity>
+		<knowrob:Effort rdf:datatype="&xsd;double">-4.2915</knowrob:Effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception2_2">
+		<rdf:type rdf:resource="&knowrob;JointPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_2678080"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfinger2Joint2"/>
+		<knowrob:Radius rdf:datatype="&xsd;double">44.9863</knowrob:Radius>
+		<knowrob:Velocity rdf:datatype="&xsd;double">2.4318</knowrob:Velocity>
+		<knowrob:Effort rdf:datatype="&xsd;double">-1.7176</knowrob:Effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception3_1">
+		<rdf:type rdf:resource="&knowrob;JointPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_2678080"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfinger3Joint1"/>
+		<knowrob:Radius rdf:datatype="&xsd;double">-0.0173</knowrob:Radius>
+		<knowrob:Velocity rdf:datatype="&xsd;double">5.2452</knowrob:Velocity>
+		<knowrob:Effort rdf:datatype="&xsd;double">-5.9304</knowrob:Effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception3_2">
+		<rdf:type rdf:resource="&knowrob;JointPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_2678080"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfinger3Joint2"/>
+		<knowrob:Radius rdf:datatype="&xsd;double">44.9876</knowrob:Radius>
+		<knowrob:Velocity rdf:datatype="&xsd;double">2.8133</knowrob:Velocity>
+		<knowrob:Effort rdf:datatype="&xsd;double">-2.3120</knowrob:Effort>
+	</owl:NamedIndividual>
+	
+	<!-- Touch Perception-->
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception1">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981405"/>
+		<knowrob:torque rdf:datatype="&xsd;double">-6.1005353e-6</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">-0.0025869906</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfingerTip1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception2">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981405"/>
+		<knowrob:torque rdf:datatype="&xsd;double">5.6266786e-6</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">0.0030076816</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfingerTip2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception3">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535981405"/>
+		<knowrob:torque rdf:datatype="&xsd;double">6.6965817e-6</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">0.0031999126</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;socialleftfingerTip3"/>
+	</owl:NamedIndividual>

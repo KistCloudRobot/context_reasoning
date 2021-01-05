@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/arbi#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+	<!ENTITY srdl2-comp "http://knowrob.org/kb/srdl2-comp.owl#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/arbi#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+	<!-- AMR_LIFT01 -->
+	<owl:NamedIndividual rdf:about="&arbi;amr_lift01">
+		<rdf:type rdf:resource="&knowrob;Robot"/>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.64</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.64</knowrob:widthOfObject><!--1.1532e-1-->
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.30</knowrob:heightOfObject><!--9.1863e-2-->
+	</owl:NamedIndividual>
+
+	<!-- AMR_LIFT02 -->
+	<owl:NamedIndividual rdf:about="&arbi;amr_lift02">
+		<rdf:type rdf:resource="&knowrob;Robot"/>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.64</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.64</knowrob:widthOfObject><!--1.1532e-1-->
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.30</knowrob:heightOfObject><!--9.1863e-2-->
+	</owl:NamedIndividual>
+	
+	<!-- AMR_Conveyor01 -->
+	<owl:NamedIndividual rdf:about="&arbi;amr_conveyor01">
+		<rdf:type rdf:resource="&knowrob;Robot"/>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.64</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.64</knowrob:widthOfObject><!--1.1532e-1-->
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.3</knowrob:heightOfObject><!--9.1863e-2-->
+	</owl:NamedIndividual>
+	
+	<!-- AMR_Conveyor02 -->
+	<owl:NamedIndividual rdf:about="&arbi;amr_conveyor02">
+		<rdf:type rdf:resource="&knowrob;Robot"/>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.64</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">0.64</knowrob:widthOfObject><!--1.1532e-1-->
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.3</knowrob:heightOfObject><!--9.1863e-2-->
+	</owl:NamedIndividual>
+	
+</rdf:RDF>

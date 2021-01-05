@@ -1,0 +1,17 @@
+
+   findall(O,
+     (not(rdf(O, rdf:type,  knowrob:'Hand')),
+     (rdfs_individual_of(O,  knowrob:'Artifact');rdfs_individual_of(O,  knowrob:'HumanScaleObject'))),
+     Objects),
+   set(Objects,Objects2),
+   member(Object,Objects2),
+   latest_detection_of_object(Object, CurrentPerception),
+   
+   rdf_has(CurrentPerception, knowrob:'startTime', StartTimeR),
+
+   rdf_split_url(_, StartTt, StartTimeR),
+   atom_concat('timepoint_', StartTAtom, StartTt),
+   atom_number(StartTAtom,IntTime),
+   get_time(ST),
+   A is ST-IntTime,
+   (ST - IntTime =< Min_time_threshold).%, ST - IntTime =< Max_time_threshold).

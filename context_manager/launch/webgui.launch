@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="pywebtest" type="talker.py" name="pywebtest"/>
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+</launch>
+

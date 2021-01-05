@@ -1,0 +1,8 @@
+rosrun context_manager context_manager org.ros.rosjava_context_manager.ContextManager
+rosrun context_manager context_manager org.ros.rosjava_context_manager.ContextonteListener
+rosrun context_manager context_manager org.ros.rosjava_context_manager.ContextSaver
+rosrun perception_listener perception_listener.py 
+rosrun context_manager context_manager org.ros.rosjava_context_manager.Client3
+rosrun pywebtest talker.py 
+roslaunch rosbridge_server rosbridge_websocket.launch 
+

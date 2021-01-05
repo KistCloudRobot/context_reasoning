@@ -1,0 +1,930 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/ontologies/arbi.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+
+
+
+    <!-- http://www.arbi.com/ontologies/GuideService.owl#SemanticMapPerception001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/GuideService.owl#SemanticMapPerception001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#SemanticMapPerception"/>
+        <knowrob:eventOccursAt rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_001"/>
+        <knowrob:objectActedOn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Desk001"/>
+        <knowrob:startTime rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#timepoint_0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548245 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548245">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548845 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548845">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Building001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Building001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Building"/>
+        <arbi:hasPlace rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001"/>
+        <arbi:hasPlace rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001"/>
+        <arbi:hasPlace rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001"/>
+        <arbi:hasPlace rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001"/>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">국제협력관</knowrob:fullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#ConferenceRoom"/>
+        <knowrob:center rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_CenterPoint001"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway004"/>
+        <arbi:hasEntrancePoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_EntrancePoint001"/>
+        <arbi:hasInnerPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_InnerPoint001"/>
+        <arbi:hasLowerLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_LowerLeftPoint001"/>
+        <arbi:hasLowerRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_LowerRightPoint001"/>
+        <arbi:hasUpperLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_UpperLeftPoint001"/>
+        <arbi:hasUpperRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_UpperRightPoint001"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">회의실 101호</knowrob:fullName>
+        <arbi:emailAddress>arbiframework3@gmail.com</arbi:emailAddress>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway004"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway004"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_LowerLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_LowerLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_LowerRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_LowerRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_UpperLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_UpperLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_UpperRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001_UpperRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Desk001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Desk001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Desk-PieceOfFurniture"/>
+        <knowrob:locatedAt rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Document001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Document001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Document"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</knowrob:depthOfObject>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001">
+        <rdf:type rdf:resource="http://www.arbi.com/ontologies/arbi.owl#DocumentHandlingRoom"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <knowrob:locationOf rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Desk001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.225</knowrob:depthOfObject>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">문서수발실</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.856</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Doorway001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Doorway001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Doorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Doorway002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Doorway002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Doorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Doorway003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Doorway003">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Doorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Doorway004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Doorway004">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Doorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Doorway005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Doorway005">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Doorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001"/>
+        <knowrob:betweenContainers rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Hallway"/>
+        <knowrob:center rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_CenterPoint001"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001"/>
+        <arbi:hasLowerLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_LowerLeftPoint001"/>
+        <arbi:hasLowerRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_LowerRightPoint001"/>
+        <arbi:hasUpperLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_UpperLeftPoint001"/>
+        <arbi:hasUpperRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_UpperRightPoint001"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.3162</knowrob:depthOfObject>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">사무실 앞 복도</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.091</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.298</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.893</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_LowerLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_LowerLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.376</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-7.516</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_LowerRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_LowerRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.286</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-7.586</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_UpperLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_UpperLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.31</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.2</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_UpperRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001_UpperRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.22</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.27</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Hallway"/>
+        <knowrob:center rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_CenterPoint001"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001"/>
+        <arbi:hasLowerLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_LowerLeftPoint001"/>
+        <arbi:hasLowerRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_LowerRightPoint001"/>
+        <arbi:hasUpperLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_UpperLeftPoint001"/>
+        <arbi:hasUpperRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_UpperRightPoint001"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.091</knowrob:depthOfObject>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">휴게실 앞 복도</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.803</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.463</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-6.57</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_LowerLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_LowerLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.3759</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-7.5158</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_LowerRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_LowerRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4241</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-7.716</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_UpperLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_UpperLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.35</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-5.425</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_UpperRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002_UpperRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.45</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-5.625</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway003">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Hallway"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway004"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:depthOfObject>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">엘리베이터 앞 복도</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Hallway004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Hallway004">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Hallway"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#ConferenceRoom001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway003"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:depthOfObject>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">회의실 앞 복도</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Intersection001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Intersection001">
+        <rdf:type rdf:resource="http://www.arbi.com/ontologies/arbi.owl#Intersection"/>
+        <knowrob:center rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#IntersectonPoint001"/>
+        <arbi:intersectionOf rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001"/>
+        <arbi:intersectionOf rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Intersection002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Intersection002">
+        <rdf:type rdf:resource="http://www.arbi.com/ontologies/arbi.owl#Intersection"/>
+        <knowrob:center rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#IntersectionPoint002"/>
+        <arbi:intersectionOf rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway003"/>
+        <arbi:intersectionOf rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#IntersectionPoint002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#IntersectionPoint002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double"></knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#IntersectonPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#IntersectonPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.318</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-6.5054</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#LevelOfAConstruction"/>
+        <knowrob:floorNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</knowrob:floorNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5425</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.98</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway003"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4375</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-6.5675</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRomm001_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRomm001_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway003"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6075</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.6175</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_LowerLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_LowerLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.405</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-5.56</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_LowerRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_LowerRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.45</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-5.625</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_UpperLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_UpperLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.365</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.335</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_UpperRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#DocumentHandlingRoom001_UpperRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.49</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.4</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001">
+        <rdf:type rdf:resource="http://www.arbi.com/ontologies/arbi.owl#Lounge"/>
+        <knowrob:center rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_CenterPoint001"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <knowrob:locationOf rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#WaterPurifier001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway002"/>
+        <arbi:hasEntrancePoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_EntrancePoint001"/>
+        <arbi:hasInnerPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_InnerPoint001"/>
+        <arbi:hasLowerLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_LowerLeftPoint001"/>
+        <arbi:hasLowerRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_LowerRightPoint001"/>
+        <arbi:hasUpperLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_UpperLeftPoint001"/>
+        <arbi:hasUpperRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_UpperRightPoint001"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.225</knowrob:depthOfObject>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">휴게실</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.856</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.3125</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.915</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway002"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.4175</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-6.5025</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway002"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.2475</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.5525</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_LowerLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_LowerLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.26</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-5.495</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_LowerRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_LowerRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.405</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-5.560</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_UpperLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_UpperLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.22</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.27</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_UpperRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001_UpperRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.365</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.335</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Metricmap001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Metricmap001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/srdl2-comp.owl#MetricMap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#OfficeRoom"/>
+        <knowrob:center rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_CenterPoint001"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001"/>
+        <knowrob:hasLevels rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#LevelOfAConstruction001"/>
+        <arbi:architecturallyConnectedTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Hallway001"/>
+        <arbi:hasEntrancePoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_EntrancePoint001"/>
+        <arbi:hasInnerPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_InnerPoint001"/>
+        <arbi:hasLowerLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_LowerLeftPoint001"/>
+        <arbi:hasLowerRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_LowerRightPoint001"/>
+        <arbi:hasUpperLeftPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_UpperLeftPoint001"/>
+        <arbi:hasUpperRightPoint rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_UpperRightPoint001"/>
+        <arbi:placedIn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Building001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.81</knowrob:depthOfObject>
+        <knowrob:fullName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">사무실</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.636</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.37</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.031</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.1</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.78</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:relativeTo rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Doorway001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.18</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.26</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_LowerLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_LowerLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.31</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.2</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_LowerRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_LowerRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.49</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.4</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_UpperLeftPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_UpperLeftPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-4.06</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.84</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_UpperRightPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#OfficeRoom001_UpperRightPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:describedInMap rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.56</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.41</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#RotationMatrix3D"/>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:m03>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.5</knowrob:m13>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</knowrob:m23>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#RotationMatrix3D"/>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:m03>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.5</knowrob:m13>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</knowrob:m23>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_003">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#RotationMatrix3D"/>
+        <knowrob:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</knowrob:m03>
+        <knowrob:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.5</knowrob:m13>
+        <knowrob:m23 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.21</knowrob:m23>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#SemanticEnvironmentmap001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#SemanticEnvironmentMap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#Topologicalmap001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/srdl2-comp.owl#TopologicalMap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#VisualPerception001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#VisualPerception001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#VisualPerception"/>
+        <knowrob:endTime rdf:resource="http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548845"/>
+        <knowrob:eventOccursAt rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_002"/>
+        <knowrob:objectActedOn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Desk001"/>
+        <knowrob:startTime rdf:resource="http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#VisualPerception002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#VisualPerception002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#VisualPerception"/>
+        <knowrob:endTime rdf:resource="http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548845"/>
+        <knowrob:eventOccursAt rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#RotationMatrix3D_003"/>
+        <knowrob:objectActedOn rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Document001"/>
+        <knowrob:startTime rdf:resource="http://www.arbi.com/ontologies/GuideService.owl#timepoint_1510548245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#WaterPurifier001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#WaterPurifier001">
+        <rdf:type rdf:resource="http://www.arbi.com/ontologies/arbi.owl#WaterPurifier"/>
+        <knowrob:locatedAt rdf:resource="http://www.arbi.com/ontologies/arbi_map.owl#Lounge001"/>
+        <knowrob:depthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</knowrob:depthOfObject>
+        <knowrob:fullName>정수기</knowrob:fullName>
+        <knowrob:heightOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.8</knowrob:heightOfObject>
+        <knowrob:widthOfObject rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</knowrob:widthOfObject>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.arbi.com/ontologies/arbi_map.owl#timepoint_0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.arbi.com/ontologies/arbi_map.owl#timepoint_0">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+
+
+
+</rdf:RDF>

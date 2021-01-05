@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+	<!ENTITY srdl2-comp "http://knowrob.org/kb/srdl2-comp.owl#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/ontologies/arbi_knowrob.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+
+	<!-- hubo -->
+	<owl:NamedIndividual rdf:about="&arbi;hubo_1">
+		<rdf:type rdf:resource="&knowrob;Robot"/>
+		<!-- hubosize -->
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.9000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.9000e-1</knowrob:widthOfObject><!--1.1532e-1-->
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.9000e-1</knowrob:heightOfObject><!--9.1863e-2-->
+		<srdl2-comp:subComponent rdf:resource="&knowrob;LeftHand"/>
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;hubo_left_hand_1">
+		<rdf:type rdf:resource="&knowrob;Robot"/>
+		<rdf:type rdf:resource="&knowrob;LeftHand"/>
+		<!-- hubosize -->
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.6120e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">2.4000e-1</knowrob:widthOfObject><!--1.1532e-1-->
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">8.0080e-2</knowrob:heightOfObject><!--9.1863e-2-->
+		<srdl2-comp:subComponent rdf:resource="&knowrob;LeftHand"/>
+		<srdl2-comp:subComponent rdf:resource="&arbi;LHAND_a1"/>
+		
+		<srdl2-comp:subComponent rdf:resource="&arbi;LHAND_b1"/>
+		
+		<srdl2-comp:subComponent rdf:resource="&arbi;LHAND_c1"/>
+	</owl:NamedIndividual>
+	
+	 <owl:Class rdf:about="&arbi;SpaceSurroundedByHand">
+	<owl:subClassOf rdf:resource="&knowrob;SpaceRegion-Empirical"/>
+        <!-- <rdfs:subClassOf>
+	    <owl:intersectionOf>
+                <rdf:Description rdf:resource="&knowrob;SpaceRegion-Empirical"/>
+                <owl:Restriction>
+                    <owl:onProperty rdf:resource="&knowrob;inFrontOf-Generally"/>
+               	    <owl:someValuesFrom rdf:resource="&knowrob;Hand"/>
+                </owl:Restriction>
+	    </owl:intersectionOf>
+       	</rdfs:subClassOf> -->
+    </owl:Class>
+
+    <owl:NamedIndividual rdf:about="&arbi;space_surrounded_by_hand">
+		<rdf:type rdf:resource="&arbi;SpaceSurroundedByHand"/>
+		
+		 <!-- space surrounded by fingers -->
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.07576e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">2.07576e-1</knowrob:widthOfObject>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">9.1863e-2</knowrob:heightOfObject>
+    </owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_a1">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_a2">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_a3">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_b1">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_b2">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_b3">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_c1">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_c2">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;LHAND_c3">
+		<rdf:type rdf:resource="&srdl2-comp;FixedUrdfJoint"/>
+	</owl:NamedIndividual>
+	
+	<!-- Sensor -->
+	<owl:NamedIndividual rdf:about="&arbi;jacohand_forceSens1_finger1">
+		<rdf:type rdf:resource="&srdl2-comp;PressureSensor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jacohand_forceSens1_finger2">
+		<rdf:type rdf:resource="&srdl2-comp;PressureSensor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jacohand_forceSens1_finger3">
+		<rdf:type rdf:resource="&srdl2-comp;PressureSensor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jacohand_forceSens2_finger1">
+		<rdf:type rdf:resource="&srdl2-comp;PressureSensor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jacohand_forceSens2_finger2">
+		<rdf:type rdf:resource="&srdl2-comp;PressureSensor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jacohand_forceSens2_finger3">
+		<rdf:type rdf:resource="&srdl2-comp;PressureSensor"/>
+	</owl:NamedIndividual>
+	
+</rdf:RDF>

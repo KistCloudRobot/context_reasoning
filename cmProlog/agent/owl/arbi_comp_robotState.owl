@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+          <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns'>
+          <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema'>
+          <!ENTITY owl 'http://www.w3.org/2002/07/owl'>
+          <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+          <!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+          <!ENTITY knowrob 'http://knowrob.org/kb/knowrob.owl#'>
+
+]>
+
+<rdf:RDF
+    xmlns:computable="http://knowrob.org/kb/computable.owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://knowrob.org/kb/comp_spatial.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:arbi="http://www.arbi.com/ontologies/arbi.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:knowrob="&knowrob;"
+    xml:base="http://knowrob.org/kb/comp_spatial.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+  </owl:Ontology>
+
+
+
+    <computable:PrologProperty rdf:about="#computeEmptyBattery">
+        <computable:command rdf:datatype="&xsd;string">emptyBattery</computable:command>
+        <computable:cache rdf:datatype="&xsd;string">dontCache</computable:cache>
+        <computable:visible rdf:datatype="&xsd;string">unvisible</computable:visible>
+        <computable:target rdf:resource="&arbi;emptyBattery"/>
+    </computable:PrologProperty>
+
+    <computable:PrologProperty rdf:about="#computeBatteryStatus">
+        <computable:command rdf:datatype="&xsd;string">batteryStatus</computable:command>
+        <computable:cache rdf:datatype="&xsd;string">dontCache</computable:cache>
+        <computable:visible rdf:datatype="&xsd;string">unvisible</computable:visible>
+        <computable:target rdf:resource="&arbi;batteryStatus"/>
+    </computable:PrologProperty>
+
+    <computable:PrologProperty rdf:about="#computeBattaryRemain">
+        <computable:command rdf:datatype="&xsd;string">batteryRemain</computable:command>
+        <computable:cache rdf:datatype="&xsd;string">dontCache</computable:cache>
+        <computable:visible rdf:datatype="&xsd;string">unvisible</computable:visible>
+        <computable:target rdf:resource="&arbi;batteryRemain"/>
+    </computable:PrologProperty>
+
+    <computable:PrologProperty rdf:about="#computeCheckWheeldrop">
+        <computable:command rdf:datatype="&xsd;string">checkWheeldrop</computable:command>
+        <computable:cache rdf:datatype="&xsd;string">dontCache</computable:cache>
+        <computable:visible rdf:datatype="&xsd;string">unvisible</computable:visible>
+        <computable:target rdf:resource="&arbi;checkWheeldrop"/>
+    </computable:PrologProperty>
+
+    <computable:PrologProperty rdf:about="#computeCheckCliff">
+        <computable:command rdf:datatype="&xsd;string">checkCliff</computable:command>
+        <computable:cache rdf:datatype="&xsd;string">dontCache</computable:cache>
+        <computable:visible rdf:datatype="&xsd;string">unvisible</computable:visible>
+        <computable:target rdf:resource="&arbi;checkCliff"/>
+    </computable:PrologProperty>
+
+    <computable:PrologProperty rdf:about="#computeCheckBlock">
+        <computable:command rdf:datatype="&xsd;string">checkBlock</computable:command>
+        <computable:cache rdf:datatype="&xsd;string">dontCache</computable:cache>
+        <computable:visible rdf:datatype="&xsd;string">unvisible</computable:visible>
+        <computable:target rdf:resource="&arbi;checkBlock"/>
+    </computable:PrologProperty>
+
+    <computable:PrologProperty rdf:about="#computeCheckBumper">
+        <computable:command rdf:datatype="&xsd;string">checkBumper</computable:command>
+        <computable:cache rdf:datatype="&xsd;string">dontCache</computable:cache>
+        <computable:visible rdf:datatype="&xsd;string">unvisible</computable:visible>
+        <computable:target rdf:resource="&arbi;checkBumper"/>
+    </computable:PrologProperty>
+
+</rdf:RDF>

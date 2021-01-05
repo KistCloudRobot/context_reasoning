@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ns1 'http://knowrob.org/kb/knowrob.owl#'>
+    <!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+    <!ENTITY arbi "http://www.arbi.com/arbi#" >
+]>
+
+<rdf:RDF
+    xmlns:ns1="&ns1;"
+    xmlns:owl="&owl;"
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+    xmlns:xsd="&xsd;"
+    xmlns:arbi="http://www.arbi.com/arbi#"
+>
+<owl:Class rdf:about="http://www.arbi.com/arbi#MoveRobotToInsideLocationOfRoom">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;toLocation"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#robotPose-insideLocationOfRoom"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="&ns1;Translation-LocationChange"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.arbi.com/arbi#GoAndAnnounce">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;subAction"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#MoveRobotToInsideLocationOfRoom"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;subAction"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#MoveRobotToFrontLocationOfRoom"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;subAction"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#FindAndTowardToPerson"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;subAction"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#TextToSpeech"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:hasValue rdf:resource="http://www.arbi.com/arbi#GoAndAnnounceOrder11"/>
+          <owl:onProperty rdf:resource="&ns1;orderingConstraints"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:hasValue rdf:resource="http://www.arbi.com/arbi#GoAndAnnounceOrder12"/>
+          <owl:onProperty rdf:resource="&ns1;orderingConstraints"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:hasValue rdf:resource="http://www.arbi.com/arbi#GoAndAnnounceOrder13"/>
+          <owl:onProperty rdf:resource="&ns1;orderingConstraints"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:hasValue rdf:resource="http://www.arbi.com/arbi#GoAndAnnounceOrder30"/>
+          <owl:onProperty rdf:resource="&ns1;orderingConstraints"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:hasValue rdf:resource="http://www.arbi.com/arbi#GoAndAnnounceOrder31"/>
+          <owl:onProperty rdf:resource="&ns1;orderingConstraints"/>
+        </owl:Restriction>
+
+        <owl:Restriction>
+          <owl:hasValue rdf:resource="http://www.arbi.com/arbi#GoAndAnnounceOrder4"/>
+          <owl:onProperty rdf:resource="&ns1;orderingConstraints"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="&ns1;ServingFoodOrDrink"/>
+  <rdfs:label rdf:datatype="&xsd;string">go and announce</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.arbi.com/arbi#FindAndTowardToPerson">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;toLocation"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#handPose-handover1"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="&ns1;Translation-LocationChange"/>
+</owl:Class>
+
+<ns1:Point2D rdf:about="http://www.arbi.com/arbi#robotPose-insideLocationOfRoom">
+  <ns1:inReachOf rdf:resource="http://www.roboearth.org/kb/map_hospital_room.owl#bed1"/>
+</ns1:Point2D>
+
+
+
+<ns1:Point2D rdf:about="http://www.arbi.com/arbi#robotPose-frontLocationOfRoom">
+  <ns1:inReachOf rdf:resource="http://www.roboearth.org/kb/map_hospital_room.owl#bottle1"/>
+</ns1:Point2D>
+
+
+<owl:Class rdf:about="http://www.arbi.com/arbi#MoveRobotToFrontLocationOfRoom">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;toLocation"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#robotPose-frontLocationOfRoom"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="&ns1;Translation-LocationChange"/>
+</owl:Class>
+
+
+<ns1:PartialOrdering-Strict rdf:about="http://www.arbi.com/arbi#GoAndAnnounceOrder12">
+  <ns1:occursAfterInOrdering rdf:resource="http://www.arbi.com/arbi#FindAndTowardToPerson"/>
+  <ns1:occursBeforeInOrdering rdf:resource="http://www.arbi.com/arbi#MoveRobotToFrontLocationOfRoom"/>
+</ns1:PartialOrdering-Strict>
+
+<ns1:DrinkingBottle rdf:about="http://www.roboearth.org/kb/map_hospital_room.owl#bottle1"/>
+
+<ns1:PartialOrdering-Strict rdf:about="http://www.arbi.com/arbi#GoAndAnnounceOrder31">
+  <ns1:occursAfterInOrdering rdf:resource="http://www.arbi.com/arbi#TextToSpeech"/>
+  <ns1:occursBeforeInOrdering rdf:resource="http://www.arbi.com/arbi#MoveRobotToInsideLocationOfRoom"/>
+</ns1:PartialOrdering-Strict>
+
+<ns1:PartialOrdering-Strict rdf:about="http://www.arbi.com/arbi#GoAndAnnounceOrder4">
+  <ns1:occursAfterInOrdering rdf:resource="http://www.arbi.com/arbi#TextToSpeech"/>
+  <ns1:occursBeforeInOrdering rdf:resource="http://www.arbi.com/arbi#FindAndTowardToPerson"/>
+</ns1:PartialOrdering-Strict>
+
+<ns1:PartialOrdering-Strict rdf:about="http://www.arbi.com/arbi#GoAndAnnounceOrder30">
+  <ns1:occursAfterInOrdering rdf:resource="http://www.arbi.com/arbi#FindAndTowardToPerson"/>
+  <ns1:occursBeforeInOrdering rdf:resource="http://www.arbi.com/arbi#MoveRobotToInsideLocationOfRoom"/>
+</ns1:PartialOrdering-Strict>
+
+
+
+<ns1:PartialOrdering-Strict rdf:about="http://www.arbi.com/arbi#GoAndAnnounceOrder13">
+  <ns1:occursAfterInOrdering rdf:resource="http://www.arbi.com/arbi#TextToSpeech"/>
+  <ns1:occursBeforeInOrdering rdf:resource="http://www.arbi.com/arbi#MoveRobotToFrontLocationOfRoom"/>
+</ns1:PartialOrdering-Strict>
+
+<ns1:PartialOrdering-Strict rdf:about="http://www.arbi.com/arbi#GoAndAnnounceOrder11">
+  <ns1:occursAfterInOrdering rdf:resource="http://www.arbi.com/arbi#MoveRobotToInsideLocationOfRoom"/>
+  <ns1:occursBeforeInOrdering rdf:resource="http://www.arbi.com/arbi#MoveRobotToFrontLocationOfRoom"/>
+</ns1:PartialOrdering-Strict>
+
+
+
+
+
+
+
+<owl:Class rdf:about="http://www.arbi.com/arbi#TextToSpeech">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="&ns1;deviceUsed"/>
+          <owl:someValuesFrom rdf:resource="http://www.arbi.com/arbi#robotRightGripper"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="&ns1;Translation-LocationChange"/>
+</owl:Class>
+
+</rdf:RDF>
+

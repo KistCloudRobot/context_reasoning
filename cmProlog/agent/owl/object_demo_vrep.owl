@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+	<!ENTITY srdl2-comp "http://knowrob.org/kb/srdl2-comp.owl#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/ontologies/arbi_knowrob.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+	<!-- object정의 먼저 인스턴스 이름을 적어두고, 타입, 크기(width, depth, height)-->
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;tomato_soup_1">
+		<rdf:type rdf:resource="&knowrob;SoupCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.0176e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.7657e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.7861e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;tomato_soup_2">
+		<rdf:type rdf:resource="&knowrob;SoupCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.0176e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.7657e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.7861e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;tomato_soup_3">
+		<rdf:type rdf:resource="&knowrob;SoupCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.0176e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.7657e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">6.7861e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;chips_can_1">
+		<rdf:type rdf:resource="&knowrob;ChipsCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">8.0000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;chips_can_2">
+		<rdf:type rdf:resource="&knowrob;ChipsCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">8.0000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;chips_can_3">
+		<rdf:type rdf:resource="&knowrob;ChipsCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.3000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">8.0000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;cracker_box_1">
+		<rdf:type rdf:resource="&knowrob;CrackerBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.1360e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">7.1810e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.6436e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;cracker_box_2">
+		<rdf:type rdf:resource="&knowrob;CrackerBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.1360e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">7.1810e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.6436e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;cracker_box_3">
+		<rdf:type rdf:resource="&knowrob;CrackerBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.1360e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">7.1810e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.6436e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;jelly_box_1">
+		<rdf:type rdf:resource="&knowrob;JellyBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">9.0000e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">3.2000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.1000e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;jelly_box_2">
+		<rdf:type rdf:resource="&knowrob;JellyBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">9.0000e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">3.2000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.1000e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;sugar_box_1">
+		<rdf:type rdf:resource="&knowrob;SugarBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.7000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">9.0000e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;sugar_box_2">
+		<rdf:type rdf:resource="&knowrob;SugarBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.7000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">9.0000e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;sugar_box_3">
+		<rdf:type rdf:resource="&knowrob;SugarBox"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.7000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-2</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">9.0000e-2</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;coffee_can_1">
+		<rdf:type rdf:resource="&knowrob;CoffeeCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.4018e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.0000e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;coffee_can_2">
+		<rdf:type rdf:resource="&knowrob;CoffeeCan"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.4018e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">1.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.0000e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="&arbi;displayRack_1">
+		<rdf:type rdf:resource="&knowrob;Shelf"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">0.03750050067901611</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">0.46249914169311523</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.8000006675720215</knowrob:widthOfObject>
+		<knowrob:physicalParts rdf:resource="&arbi;bottomShelf_1"/>
+		<knowrob:physicalParts rdf:resource="&arbi;middleShelf_1"/>
+		<knowrob:physicalParts rdf:resource="&arbi;topShelf_1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;bottomShelf_1">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.6250e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.8000e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;displayRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">1</knowrob:floorNumber>
+		<knowrob:physicalParts rdf:resource="&arbi;crackerBoxRegion1"/>
+		<knowrob:physicalParts rdf:resource="&arbi;jellyBoxRegion1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;middleShelf_1">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.6250e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.8000e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;displayRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">2</knowrob:floorNumber>
+		<knowrob:physicalParts rdf:resource="&arbi;chipsCanRegion1"/>
+		<knowrob:physicalParts rdf:resource="&arbi;tomatoSoupCanRegion1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;topShelf_1">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.6250e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.8000e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;displayRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">3</knowrob:floorNumber>
+		<knowrob:physicalParts rdf:resource="&arbi;coffeeCanRegion1"/>
+		<knowrob:physicalParts rdf:resource="&arbi;sugarBoxRegion1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;counter_1">
+		<!-- <rdf:type rdf:resource="&knowrob;Table-PieceOfFurniture"/> -->
+                <rdf:type rdf:resource="&knowrob;DisplayShelf"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.0000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">6.4840e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-1</knowrob:widthOfObject>
+		<knowrob:physicalParts rdf:resource="&arbi;counterArea1"/>
+		<knowrob:physicalParts rdf:resource="&arbi;counterRegion1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;laptop_1">
+		<rdf:type rdf:resource="&knowrob;Laptop"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.8028e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">3.5048e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">4.1057e-1</knowrob:widthOfObject>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;storageRack_1">
+		<rdf:type rdf:resource="&knowrob;Shelf"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">1.9700e+0</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">3.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.2000e+0</knowrob:widthOfObject>
+		<knowrob:physicalParts rdf:resource="&arbi;storage_shelf_1"/>
+		<knowrob:physicalParts rdf:resource="&arbi;storage_shelf_2"/>
+		<knowrob:physicalParts rdf:resource="&arbi;storage_shelf_3"/>
+		<knowrob:physicalParts rdf:resource="&arbi;storage_shelf_5"/>
+		<knowrob:physicalParts rdf:resource="&arbi;storage_shelf_4"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;storage_shelf_1">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.0000e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.6000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.1600e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;storageRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">1</knowrob:floorNumber>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;storage_shelf_2">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.0000e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.6000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.1600e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;storageRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">2</knowrob:floorNumber>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;storage_shelf_3">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.0000e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.6000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.1600e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;storageRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">3</knowrob:floorNumber>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;storage_shelf_4">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.0000e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.6000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.1600e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;storageRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">4</knowrob:floorNumber>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;storage_shelf_5">
+		<rdf:type rdf:resource="&knowrob;ShelfInABuilding"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">2.0000e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.6000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">1.1600e+0</knowrob:widthOfObject>
+		<knowrob:physicalPartOf rdf:resource="&arbi;storageRack_1"/>
+		<knowrob:floorNumber rdf:datatype="&xsd;string">5</knowrob:floorNumber>
+	</owl:NamedIndividual>
+	
+	<!-- area -->
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;crackerBoxRegion1">
+		<rdf:type rdf:resource="&knowrob;CrackerBoxRegion"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;crackerBoxPoint1"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;crackerBoxPoint2"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-1</knowrob:widthOfObject>
+		<knowrob:typePrimaryFunction-StoragePlaceFor rdf:resource="&knowrob;CrackerBox"/>
+		<knowrob:mainColorObject rdf:resource="&knowrob;BlackColor"/>
+		<knowrob:physicalPartOf rdf:resource="&arbi;bottomShelf_1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;jellyBoxRegion1">
+		<rdf:type rdf:resource="&knowrob;JellyBoxRegion"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;jellyBoxPoint1"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;jellyBoxPoint2"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-1</knowrob:widthOfObject>
+		<knowrob:typePrimaryFunction-StoragePlaceFor rdf:resource="&knowrob;JellyBox"/>
+		<knowrob:mainColorObject rdf:resource="&knowrob;BlueColor"/>
+		<knowrob:physicalPartOf rdf:resource="&arbi;bottomShelf_1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;chipsCanRegion1">
+		<rdf:type rdf:resource="&knowrob;ChipsCanRegion"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;chipsCanPoint1"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;chipsCanPoint2"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-1</knowrob:widthOfObject>
+		<knowrob:typePrimaryFunction-StoragePlaceFor rdf:resource="&knowrob;ChipsCan"/>
+		<knowrob:mainColorObject rdf:resource="&knowrob;OrangeColor"/>
+		<knowrob:physicalPartOf rdf:resource="&arbi;middleShelf_1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;tomatoSoupCanRegion1">
+		<rdf:type rdf:resource="&knowrob;TomatoSoupCanRegion"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;tomatoSoupPoint1"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;tomatoSoupPoint2"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-1</knowrob:widthOfObject>
+		<knowrob:typePrimaryFunction-StoragePlaceFor rdf:resource="&knowrob;SoupCan"/>
+		<knowrob:mainColorObject rdf:resource="&knowrob;YellowColor"/>
+		<knowrob:physicalPartOf rdf:resource="&arbi;middleShelf_1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;coffeeCanRegion1">
+		<rdf:type rdf:resource="&knowrob;CoffeeCanRegion"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;coffeeCanPoint1"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;coffeeCanPoint2"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-1</knowrob:widthOfObject>
+		<knowrob:typePrimaryFunction-StoragePlaceFor rdf:resource="&knowrob;CoffeeCan"/>
+		<knowrob:mainColorObject rdf:resource="&knowrob;GreenColor"/>
+		<knowrob:physicalPartOf rdf:resource="&arbi;topShelf_1"/>
+	</owl:NamedIndividual>
+	
+	<!-- 검토 -->
+	<owl:NamedIndividual rdf:about="&arbi;sugarBoxRegion1">
+		<rdf:type rdf:resource="&knowrob;SugarBoxRegion"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;sugarBoxPoint1"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;sugarBoxPoint2"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.7500e-2</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">4.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">8.0000e-1</knowrob:widthOfObject>
+		<knowrob:typePrimaryFunction-StoragePlaceFor rdf:resource="&knowrob;SugarBox"/>	
+		<knowrob:mainColorObject rdf:resource="&knowrob;RedColor"/>
+		<knowrob:physicalPartOf rdf:resource="&arbi;topShelf_1"/>
+	</owl:NamedIndividual>
+	
+	
+	<owl:NamedIndividual rdf:about="&arbi;counterRegion1">
+		<rdf:type rdf:resource="&knowrob;DisplayShelf"/>
+		<knowrob:locatedAtPoint-Spatial rdf:resource="&arbi;counterPoint1"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.0000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">2.0000e-1</knowrob:widthOfObject>
+		<knowrob:typePrimaryFunction-StoragePlaceFor rdf:resource="&knowrob;GraspingSomething"/>	
+		<knowrob:mainColorObject rdf:resource="&knowrob;PurpleColor"/>
+		<knowrob:physicalPartOf rdf:resource="&arbi;counter_1"/>
+	</owl:NamedIndividual>
+
+
+	<owl:NamedIndividual rdf:about="&arbi;counterArea1">
+		<rdf:type rdf:resource="&knowrob;TableArea"/>
+		<knowrob:heightOfObject rdf:datatype="&xsd;double">3.0000e-1</knowrob:heightOfObject>
+		<knowrob:depthOfObject rdf:datatype="&xsd;double">2.0000e-1</knowrob:depthOfObject>
+		<knowrob:widthOfObject rdf:datatype="&xsd;double">2.0000e-1</knowrob:widthOfObject>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_counterCenter"/>
+		<knowrob:mainColorObject rdf:resource="&knowrob;PurpleColor"/>
+	</owl:NamedIndividual>
+
+</rdf:RDF>

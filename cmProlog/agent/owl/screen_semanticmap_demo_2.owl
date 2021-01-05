@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY arbi "http://www.arbi.com/ontologies/arbi.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+	<!ENTITY srdl2-comp "http://knowrob.org/kb/srdl2-comp.owl#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xml:base="http://knowrob.org/kb/ias_semantic_map.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:arbi="http://www.arbi.com/ontologies/arbi_knowrob.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/ias_semantic_map.owl#">
+        <owl:imports rdf:resource="package://knowrob_common/owl/knowrob.owl"/>
+    </owl:Ontology>
+>
+
+
+	
+	<!-- 실제 perception을 하지 못하므로, 해당 상황에 대한 screen shot을 찍어 만든 semanticmap -->
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_tomato_soup_1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">7.842703489586711E-4</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">-2.084981679916382</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">0.0012660003267228603</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">-0.27523180842399597</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">0.9999069571495056</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">0.6262499094009399</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">-0.013562456704676151</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">0.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_tomato_soup_2">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">9.36597993131727E-4</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">-2.084958791732788</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">0.0011150679783895612</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">-1.4752399921417236</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">0.9999063014984131</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">0.6262513399124146</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">-0.013613902032375336</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">0.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_chips_can_1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">179.18</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">-1.9155</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">1.97</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">-1.1647</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">-26.08</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">0.6961</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">0.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_chips_can_2">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">0.9990109205245972</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">-2.1989283561706543</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">0.0439978651702404</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">1.5978046655654907</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">0.003836657851934433</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">0.8458251357078552</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">-0.005168996285647154</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">0.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_chips_can_3">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">0.9992978572845459</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">-2.2008345127105713</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">0.03562219440937042</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">1.4266221523284912</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">0.009134074673056602</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">0.8453889489173889</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.007179527543485165</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">0.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_cracker_box_1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">0.7044761180877686</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">-2.041654348373413</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">-0.013293717987835407</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">1.511192798614502</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">0.021105974912643433</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">0.8057901859283447</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.7092893123626709</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">0.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;rotMat3D_jaco1">
+		<rdf:type rdf:resource="&arbi;RotationMatrix3D"/>
+		<knowrob:m00 rdf:datatype="&xsd;double">0</knowrob:m00>
+		<knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+		<knowrob:m02 rdf:datatype="&xsd;double">178.30</knowrob:m02>
+		<knowrob:m03 rdf:datatype="&xsd;double">-1.7971</knowrob:m03>
+
+		<knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+		<knowrob:m11 rdf:datatype="&xsd;double">0.0</knowrob:m11>
+		<knowrob:m12 rdf:datatype="&xsd;double">-61.80</knowrob:m12>
+		<knowrob:m13 rdf:datatype="&xsd;double">-1.1583</knowrob:m13>
+
+		<knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+		<knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+		<knowrob:m22 rdf:datatype="&xsd;double">6.97</knowrob:m22>
+		<knowrob:m23 rdf:datatype="&xsd;double">0.8026</knowrob:m23>
+
+		<knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+		<knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+		<knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+		<knowrob:m33 rdf:datatype="&xsd;double">0.0</knowrob:m33>
+	</owl:NamedIndividual>
+	
+	<!-- VisualObjectPerception한 부분-->
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception1">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535975000"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;tomato_soup_1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_tomato_soup_1"/>
+	</owl:NamedIndividual>
+
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception2">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535975000"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;tomato_soup_2"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_tomato_soup_2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception3">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535975000"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;chips_can_1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_chips_can_1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception4">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535975000"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;chips_can_2"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_chips_can_2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception5">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535975000"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;chips_can_3"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_chips_can_3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;visualObjectPerception6">
+		<rdf:type rdf:resource="&knowrob;VisualObjectPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:endTime rdf:resource="&arbi;timepoint_1535975000"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;cracker_box_1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_cracker_box_1"/>
+	</owl:NamedIndividual>
+	
+	<!-- JointPerception한 부분 -->
+	<!--
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception1">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_1"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">4.5577898025512695</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">0.0162137</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception2">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_2"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">2.9784514904</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">-15.794433</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception3">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_3"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">4.722102165222168</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">12.731184</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception4">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_4"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">0.4784858226776123</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">1.1272571</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception5">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_5"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">5.84444522857666</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">-2.75836682</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception6">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_6"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">2.7961626052856445</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">-0.0451532490</knowrob:effort>
+	</owl:NamedIndividual>
+	-->
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception7">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_finger_1"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">0.082943201</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">0.0</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception8">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_finger_2"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">0.1796059608</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">0.0</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;jointPerception9">
+      	<rdf:type rdf:resource="&knowrob;JointPerception"/>
+      	<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+      	<knowrob:objectActedOn rdf:resource="&arbi;j2n6s300_joint_finger_3"/>
+      	<knowrob:radius rdf:datatype="&xsd;double">0.203815460</knowrob:radius>
+      	<knowrob:velocity rdf:datatype="&xsd;double">0.0</knowrob:velocity>
+      	<knowrob:effort rdf:datatype="&xsd;double">0.0</knowrob:effort>
+	</owl:NamedIndividual>
+	
+	<!-- RobotBodyPerception한 부분 -->
+	<owl:NamedIndividual rdf:about="&knowrob;RobotBodyPerception1">
+		<rdf:type rdf:resource="&knowrob;VisualRobotBodyPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:objectActedOn rdf:resource="&arbi;jaco1"/>
+		<knowrob:eventOccursAt rdf:resource="&arbi;rotMat3D_jaco1"/>
+	</owl:NamedIndividual>
+	
+	<!-- TouchPerception한 부분 -->
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception1">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:torque rdf:datatype="&xsd;double">1.3028085049882066e-05</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">-0.19324174150824547</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;jacohand_forceSens1_finger1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception2">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:torque rdf:datatype="&xsd;double">-6.535649390571052e-06</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">0.1327579766511917</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;jacohand_forceSens1_finger2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception3">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:torque rdf:datatype="&xsd;double">-7.593631835334236e-06</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">-0.03821037337183952</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;jacohand_forceSens1_finger3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception4">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:torque rdf:datatype="&xsd;double">0.020828690379858017</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">5.473446846008301</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;jacohand_forceSens2_finger1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception5">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:torque rdf:datatype="&xsd;double">0.042945604771375656</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">0.888774037361145</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;jacohand_forceSens2_finger2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&arbi;touchPerception6">
+		<rdf:type rdf:resource="&knowrob;TouchPerception"/>
+		<knowrob:startTime rdf:resource="&arbi;timepoint_1535974641"/>
+		<knowrob:torque rdf:datatype="&xsd;double">0.009953007102012634</knowrob:torque>
+		<knowrob:force rdf:datatype="&xsd;double">3.3575942516326904</knowrob:force>
+		<knowrob:objectActedOn rdf:resource="&arbi;jacohand_forceSens2_finger3"/>
+	</owl:NamedIndividual>
+</rdf:RDF>
